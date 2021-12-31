@@ -1,1 +1,1 @@
-semngat mevn
+semangat mevn alif !!
