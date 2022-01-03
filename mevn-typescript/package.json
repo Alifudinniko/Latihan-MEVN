@@ -4,8 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "npm run build --prefix server && vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "server": "npm run dev --prefix server",
+    "clean": "rimraf dist server/dist",
+    "start": "npm start --prefix server"
   },
   "dependencies": {
     "core-js": "^3.6.5",
